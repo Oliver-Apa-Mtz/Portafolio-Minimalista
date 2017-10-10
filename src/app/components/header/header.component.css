@@ -1,0 +1,95 @@
+header{
+  height: 100px;
+}
+h3{
+  position: absolute;
+  top: 35px;
+  font-size: 3em;
+}
+h3::before, h3::after{
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 1px;
+  left: -5px;
+  background-color: black;
+}
+h3::before{
+  top: 12px;
+}
+h3::after{
+  top: 15px;
+}
+.icon-menu{
+  position: absolute;
+  right: 0;
+  top: 37px;
+  cursor: pointer;
+}
+.icon-menu img{
+  width: 25px;
+  padding: 5px;
+}
+.icon-menu img:hover{
+  background-color: #7beec7;
+}
+.menu{
+  position: fixed;
+  z-index: 98;
+  width: 450px;
+  height: 100vh;
+  top: 0;
+  right: -500px;
+  background-image: url('/assets/img/nav_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all .3s ease-in;
+}
+.menu nav{
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 50px;
+}
+.menu li{
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+.menu li:hover{
+  color: #7beec7;
+}
+.menu-footer{
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+  text-align: center;
+}
+.menu-footer h4{
+  font-size: 1em;
+  color: white;
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+.menu-footer .social-footer{
+  font-size: 1.4em;
+  color: white;
+}
+.menu-footer .social-footer:hover{
+  color: #7beec7;
+}
+.close-icon{
+  font-family: 'arial';
+  position: absolute;
+  color: white;
+  font-size: 2em;
+  top: 50px;
+  left: 30px;
+  cursor: pointer;
+}
+.close-icon:hover{
+  color: #7beec7;
+}

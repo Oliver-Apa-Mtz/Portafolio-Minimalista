@@ -1,1 +1,139 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Bold";
+  src: url("/assets/fonts/azedo-bold.woff") format("woff")
+}
+@font-face {
+  font-family: "Light";
+  src: url("/assets/fonts/azedo-light.woff") format("woff")
+}
+@font-face {
+  font-family: "Normal";
+  src: url("/assets/fonts/lekton.ttf") format("woff")
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 13px;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: white;
+}
+.container{
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
+}
+.section{
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+}
+.font-bold{
+  font-family: 'Bold';
+}
+.font-light{
+  font-family: 'Light';
+}
+.font{
+  font-family: 'Normal';
+  line-height: 25px;
+}
+.margin-top{
+  margin-top: 100px;
+}
+.margin-top-medium{
+  margin-top: 40px;
+}
+.line-text{
+  position: relative;
+}
+.line-text::before{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: black;
+  left: 0;
+  bottom: -20px;
+}
+.uppercase{
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.effect-box-blue{
+  position: relative;
+  background-color: #f4f4f4;
+  transition: all .3s;
+  cursor: pointer;
+}
+.effect-box-blue:hover{
+  background-color: rgba(123, 238, 199,.8);
+}
+.effect-box-blue::before{
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  border-top: 4px solid;
+  border-right: 4px solid;
+  border-color: transparent;
+}
+.effect-box-blue:hover::before{
+  border-color: black;
+  animation: box-right 1.5s linear 1;
+}
+@keyframes box-right{
+
+}
+.social-footer{
+  margin: 0 5px 0 5px;
+  color: black;
+}
+.social-footer:hover{
+  color: #7beec7;
+}
+.arrow{
+  position: fixed;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-top: 2px;
+}
+.arrow:hover{
+  color: #7beec7;
+}
+.input{
+  position: relative;
+  width: 80%;
+  margin-left: 10%;
+  height: 50px;
+  padding: 0 10px;
+  border: 1px solid rgba(0,0,0,.2);
+}
+.input:focus{
+  border-color: black;
+  outline: none;
+}
+.button{
+  position: relative;
+  width: 60%;
+  margin-left: 20%;
+  height: 50px;
+  background-color: #7beec7;
+  color: white;
+  border: 0px;
+  cursor: pointer;
+}
