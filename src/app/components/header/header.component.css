@@ -5,6 +5,13 @@ h3{
   position: absolute;
   top: 35px;
   font-size: 3em;
+  color: black;
+}
+h3:hover{
+  color: #7beec7;
+}
+h3:hover::before, h3:hover::after{
+  background-color: #7beec7;
 }
 h3::before, h3::after{
   position: absolute;
@@ -50,14 +57,15 @@ h3::after{
   margin-left: 10%;
   padding-top: 50px;
 }
+.menu a{
+  text-decoration: none;
+}
 .menu li{
   font-size: 1.7em;
   font-weight: bold;
   margin-bottom: 20px;
   color: white;
-  text-decoration: none;
   list-style: none;
-  cursor: pointer;
 }
 .menu li:hover{
   color: #7beec7;

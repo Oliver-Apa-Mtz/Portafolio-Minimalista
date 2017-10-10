@@ -1,16 +1,16 @@
 <header class="container">
-  <h3 class="font-bold">OAM</h3>
+  <a [routerLink]="['/home']"><h3 class="font-bold">OAM</h3></a>
   <i class="icon-menu" (click)="openMenu()"><img src="assets/icon/menu.png" alt=""></i>
 </header>
 <div class="menu">
   <p (click)="closeMenu()" class="close-icon">X</p>
   <nav class="margin-top">
     <ul>
-      <li class="font uppercase">home</li>
-      <li class="font uppercase">about</li>
-      <li class="font uppercase">portfolio</li>
+      <a [routerLink]="['/home']" (click)="closeMenu()"><li class="font uppercase">inicio</li></a>
+      <a [routerLink]="['/about']" (click)="closeMenu()"><li class="font uppercase">acerca de</li></a>
+      <a [routerLink]="['/portfolio']" (click)="closeMenu()"><li class="font uppercase">portafolio</li></a>
       <li class="font uppercase">blog</li>
-      <li class="font uppercase">contact</li>
+      <li class="font uppercase">contacto</li>
     </ul>
   </nav>
   <div class="menu-footer">

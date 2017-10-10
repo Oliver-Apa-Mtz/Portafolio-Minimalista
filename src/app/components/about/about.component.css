@@ -1,0 +1,55 @@
+.bio{
+  background-color: white;
+  padding-top: 100px;
+  min-height: 200px;
+}
+.about{
+  display: flex;
+  min-height: 300px;
+}
+.about > div{
+  flex-grow: 1;
+  padding-left: 10px;
+}
+.story{
+  position: relative;
+}
+.story img{
+  position: absolute;
+  width: 65%;
+}
+.story .contenedor-box{
+  padding: 70px;
+}
+.story .contenedor-box .box-gray-parallax{
+  background-color: #7beec7;
+}
+.work{
+  width: 40%;
+  height: 100%;
+  margin-bottom: 100px;
+}
+.work img{
+  margin-top: 30px;
+  width: 40px;
+}
+.work-img{
+  position: absolute;
+  width: 600px;
+  height: 700px;
+  min-height: 300px;
+  top: 100px;
+  right: 50px;
+  background-image: url('/assets/img/work.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.work-img::before{
+  position: absolute;
+  content: "";
+  width: 550px;
+  height: 650px;
+  top: 15px;
+  left: 15px;
+  border: 10px solid white;
+}
